@@ -23,5 +23,13 @@ nodes:
     containerPath: /workspace
 - role: worker
   extraMounts:
-  - hostPath: ../cluster-volume/worker
+  - hostPath: ../cluster-volume/worker1
+    containerPath: /workspace
+- role: worker
+  extraMounts:
+  - hostPath: ../cluster-volume/worker2
+    containerPath: /workspace
+- role: worker
+  extraMounts:
+  - hostPath: ../cluster-volume/worker3
     containerPath: /workspace
